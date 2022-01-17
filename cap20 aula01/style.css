@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+:root{
+--font1: 'Passion One', cursive;
+--font2: 'Sriracha', cursive;
+--fontSize: 20px;
+--dv_borderRadius: 3px;
+}
+*{
+    margin: 0px;
+}
+header{
+    padding: 60px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-family: var(--font1);
+}
+header > p > a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    font-family: var(--font2);
+    font-size: var(--fontSize);
+    font-weight: bold;
+}
+#one{
+    padding: 70px;
+    padding-left: 20px;
+}
+#img1{
+    padding: 70px;
+    padding-left: 20px;
+    background-image: url('./imagens/background001.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+#dv1{
+    background-color: rgba(22, 22, 22, 0.514);
+    width: 30vh;
+    padding: 20px;
+    border-radius: var(--dv_borderRadius);
+}
+#two{
+    padding: 70px;
+    padding-left: 20px;
+}
+#three{
+    padding: 70px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+#img2{
+    padding: 70px;
+    padding-left: 20px;
+    background-image: url('./imagens/background002.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+#dv2{
+    background-color: rgba(22, 22, 22, 0.514);
+    width: 30vh;
+    padding: 20px;
+    border-radius: var(--dv_borderRadius);
+}
+#four{
+    padding: 70px;
+    padding-left: 20px;
+}
+#five{
+    padding: 70px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+footer > p > a{
+    text-decoration: none;
+    color: white;
+}
