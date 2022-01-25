@@ -1,2 +1,4 @@
 # html5 e css3
- armazenando exercicioos
+ armazenando exercicios
+
+ projeto cordel desenvolvido por gustavo guanabara do <strong>Curso em Video</strong>
