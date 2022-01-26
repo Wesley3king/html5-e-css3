@@ -2,23 +2,24 @@
 :root{
 --font1: 'Passion One', cursive;
 --font2: 'Sriracha', cursive;
---fontSize: 20px;
+--fontSize: 2.6vw;
 --dv_borderRadius: 3px;
 }
 *{
     margin: 0px;
 }
 html, body{
-    min-width: 100vh;
+    min-width: 96vw;
 }
 header{
-    padding: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: black;
     color: white;
     text-align: center;
 }
 header > h1{
-    font-size: 8vh;
+    font-size: 5vw;
     font-family: var(--font1);
     font-variant: small-caps;
 }
@@ -49,7 +50,7 @@ main{
 }
 #dv1{
     background-color: rgba(22, 22, 22, 0.514);
-    width: 30vh;
+    display: inline-block;
     padding: 20px;
     border-radius: var(--dv_borderRadius);
 }
@@ -66,7 +67,7 @@ main{
 }
 #dv2{
     background-color: rgba(22, 22, 22, 0.514);
-    width: 30vh;
+    display: inline-block;
     padding: 20px;
     border-radius: var(--dv_borderRadius);
 }
