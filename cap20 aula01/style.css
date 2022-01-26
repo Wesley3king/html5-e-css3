@@ -8,6 +8,9 @@
 *{
     margin: 0px;
 }
+html, body{
+    min-width: 100vh;
+}
 header{
     padding: 60px;
     background-color: black;
@@ -15,19 +18,25 @@ header{
     text-align: center;
 }
 header > h1{
+    font-size: 8vh;
     font-family: var(--font1);
+    font-variant: small-caps;
 }
 header > p > a{
     text-decoration: none;
     color: white;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 main{
     font-family: var(--font2);
     font-size: var(--fontSize);
     font-weight: bold;
 }
-#one{
-    padding: 70px;
+.view{
+    padding: 10vh;
     padding-left: 20px;
 }
 #img1{
@@ -44,14 +53,8 @@ main{
     padding: 20px;
     border-radius: var(--dv_borderRadius);
 }
-#two{
-    padding: 70px;
-    padding-left: 20px;
-}
-#three{
-    padding: 70px;
-    padding-top: 0px;
-    padding-left: 20px;
+.menor{
+    padding-top: 1vh;
 }
 #img2{
     padding: 70px;
@@ -66,15 +69,6 @@ main{
     width: 30vh;
     padding: 20px;
     border-radius: var(--dv_borderRadius);
-}
-#four{
-    padding: 70px;
-    padding-left: 20px;
-}
-#five{
-    padding: 70px;
-    padding-top: 0px;
-    padding-left: 20px;
 }
 footer{
     text-align: center;
