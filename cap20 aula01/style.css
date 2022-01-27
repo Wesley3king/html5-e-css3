@@ -2,7 +2,7 @@
 :root{
 --font1: 'Passion One', cursive;
 --font2: 'Sriracha', cursive;
---fontSize: 2.6vw;
+--fontSize: 2.6vh;
 --dv_borderRadius: 3px;
 }
 *{
@@ -40,9 +40,9 @@ main{
     padding: 10vh;
     padding-left: 20px;
 }
-/*.sombra{
-    box-shadow: 0px 10px 13px 0px rgba(0, 0, 0, 0.486);
-}*/
+.sombra{
+    box-shadow: inset 0px -7px 10px -7px rgba(0, 0, 0, 0.808);
+}
 #img1{
     padding: 70px;
     padding-left: 20px;
