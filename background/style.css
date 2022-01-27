@@ -1,0 +1,10 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+}
+#zero{
+    margin: 15px;
+    width: 400px;
+    height: 400px;
+    background:url('./img/121519764_363476261462195_8390902116164190194_o.jpg') brown top center no-repeat;
+}
