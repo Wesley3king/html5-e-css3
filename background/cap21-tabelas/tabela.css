@@ -1,0 +1,18 @@
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+table{
+    width: 200px;
+    border-collapse: collapse;
+}
+table#anime{
+    width: 600px;
+}
+#anime tr > td{
+    padding: 20px;
+}
+#anime tr > td:hover{
+background-color: cornflowerblue;
+}
