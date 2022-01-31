@@ -11,6 +11,9 @@ td, th{
     padding: 5px;
     text-align: center;
 }
+th{
+    background-color: rgba(128, 128, 128, 0.493);
+}
 .ll{
     text-align: left;
 }
@@ -20,5 +23,10 @@ td, th{
     max-width: 200px;
 }
 table > tfoot > tr{
-background-color: chartreuse;
+background-color: rgba(128, 128, 128, 0.493);
+}
+table > caption{
+    font: normal bold 20px helvetica, Sans-Serif;
+    font-variant: small-caps;
+
 }

@@ -1,4 +1,4 @@
-td{
+td, th{
     border: 1px solid black;
     text-align: center;
     vertical-align: bottom;
@@ -8,6 +8,7 @@ table{
     width: 70vw;
     border-collapse: collapse;
     height: 100px;
+    margin-top: 50px;
 }
 table#anime{
     width: 600px;
@@ -15,7 +16,7 @@ table#anime{
 #anime tr > td{
     padding: 20px;
 }
-#anime tr > td:hover{
+#anime tr > td:hover,#anime tr > th:hover{
 background-color: cornflowerblue;
 }
 #aula2 tr td{
