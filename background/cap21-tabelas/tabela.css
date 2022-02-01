@@ -4,6 +4,7 @@ td, th{
     vertical-align: bottom;
     padding: 4px;
 }
+
 table{
     width: 70vw;
     border-collapse: collapse;
@@ -21,4 +22,7 @@ background-color: cornflowerblue;
 }
 #aula2 tr td{
     vertical-align: top;
+}
+table#lister > tbody > tr:nth-child(odd){
+    background-color: gray;
 }

@@ -12,6 +12,9 @@ td, th{
     text-align: center;
 }
 th{
+    background-color: gray;
+}
+table tbody tr:nth-child(even) {
     background-color: rgba(128, 128, 128, 0.493);
 }
 .ll{
@@ -23,7 +26,7 @@ th{
     max-width: 200px;
 }
 table > tfoot > tr{
-background-color: rgba(128, 128, 128, 0.493);
+background-color: rgb(121, 121, 121);
 }
 table > caption{
     font: normal bold 20px helvetica, Sans-Serif;
