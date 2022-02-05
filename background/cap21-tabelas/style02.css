@@ -5,6 +5,7 @@ body{
 table{
     border-collapse: collapse;
     max-width: 500px;
+    position: relative;
 }
 td, th{
     border: 1px solid black;
@@ -16,6 +17,10 @@ th{
 }
 table tbody tr:nth-child(even) {
     background-color: rgba(128, 128, 128, 0.493);
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
 }
 .ll{
     text-align: left;
@@ -32,4 +37,8 @@ table > caption{
     font: normal bold 20px helvetica, Sans-Serif;
     font-variant: small-caps;
 
+}
+p{
+    font-size: 20px;
+    font-variant: small-caps;
 }
