@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgoup em tabelas</title>
+    <style>
+         body{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: max-content;
+            margin: auto;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .red{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>colgroup em tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="red" span="2"> 
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>idade</th>
+                <th>profisão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>36</td>
+                <td>enfermeira</td>
+            </tr>
+            <tr>
+                <td>mauricio</td>
+                <td>44</td>
+                <td>empresário</td>
+            </tr>
+            <tr>
+                <td>edgar</td>
+                <td>32</td>
+                <td>eletrecista</td>
+            </tr>
+            <tr>
+                <td>heather</td>
+                <td>29</td>
+                <td>médica</td>
+            </tr>
+            <tr>
+                <td>jeferson</td>
+                <td>22</td>
+                <td>estudante</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
