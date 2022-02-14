@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas responsivas</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: max-content;
+            margin: auto;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 25px;
+        }
+        #tabela{
+            overflow-x: auto;
+        }
+        #tabela::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabelas responsivas com overflow x</h1>
+
+    <div id="tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>segunda</th>
+                    <th>terça</th>
+                    <th>quarta</th>
+                    <th>quinta</th>
+                    <th>sexta</th>
+                    <th>sabado</th>
+                    <th>domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</body>
+</html>
