@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        html{
+            background-image: url('./img-1.jpg');
+            margin: 0;
+            padding: 0;
+            width: 96vw;
+            height: 96vh;
+        }
+        body{
+            width: 98%;
+            height: 98vh;
+            font-family: ubuntu,sans-serif;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(50deg, rgba(255, 0, 0, 0.774) , rgba(0, 0, 255, 0.658)) no-repeat;
+            transform: translate(-1%,-1%);
+        }
+        @media (max-width: 780px) {
+            body{
+                transform: translate(-5%,-2%);
+            }
+        }
+
+        @media (min-width: 1100px) {
+            body{
+                padding: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>teste de background</h1>
+    </header>
+</body>
+</html>
