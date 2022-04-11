@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relogio com css</title>
+    <style>
+        body{
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+        header h1{
+            font: optional;
+        }
+        .mark{
+            width: 6px;
+            height: 18px;
+            background-color: aqua;
+        }
+        .mark2{
+            width: 6px;
+            height: 18px;
+            background-color: aqua;
+            transform: rotateZ(90deg);
+        }
+        .ttp{
+            margin-left: 50%;
+        }
+        .bbt{
+            margin-left: 50%;
+            margin-top: 110px;
+        }
+
+        .rrt{
+            margin-top: 130px;
+            margin-left: calc(100% - 10px);
+        }
+        .llt{
+            margin-top: -10px;
+        }
+        .min{
+            width: 6px;
+            height: 140px;
+            background-color: cornflowerblue;
+           
+            margin-left: -3px;
+            margin-top: 9px;
+        }
+        .align{
+            width: 6px;
+            height: 280px;
+            
+            margin-top: -100%;
+            margin-left: 51%;
+            animation: horas calc(60s*60) linear infinite;
+        }
+        .align2{
+            width: 6px;
+            height: 280px;
+            
+            margin-top: -100%;
+            margin-left: 51%;
+            animation: horas 60s linear infinite;
+        }
+        .hora{
+            width: 6px;
+            height: 130px;
+            background-color: brown;
+            margin-left: -3px;
+            margin-top: 30px;
+        }
+        .relogio{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: auto;
+            border: 8px solid white;
+        }
+        @keyframes horas{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>relógio</h1>
+    </header>
+    <main>
+        <div class="relogio"><div class="mark ttp"></div>
+        <div class="mark2 rrt"></div>
+        <div class="mark2 llt"></div>
+        <div class="mark bbt"></div>
+
+        <div class="align2">
+            <div class="min"></div>
+        </div>
+        <div class="align">
+            <div class="hora"></div>
+        </div>
+    </div>
+
+    </main>
+</body>
+</html>
