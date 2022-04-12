@@ -5,26 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>treinando a criação de tabelas</title>
-    <style></style>
+    <style>
+
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 4px;
+        }
+        thead tr,tbody tr:nth-child(even){
+            background-color: gray;
+        }
+        .frame{
+            background-color: rgba(0, 0, 255, 0.267);
+        }
+        .destaque{
+            background-color: rgba(255, 217, 0, 0.473);
+        }
+        @media (max-width: 500px) {
+            .ovf{
+                width: 511;
+                overflow-x: auto;
+                margin: auto;
+            }
+            .ovf::-webkit-scrollbar{
+               display: none;
+            }
+        }
+        @media (min-width: 720px) {
+            .ovf{
+            width: max-content;
+            margin: auto;
+        }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>pratica com tabelas</h1>
     </header>
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>linguagens</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-            <tfoot>
-
-            </tfoot>
-        </table>
+        <div class="ovf">
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col class="frame">
+                </colgroup>
+                <caption>linguagens de programação</caption>
+                <thead>
+                    <tr>
+                        <th>linguagens</th>
+                        <th scope="col">front-end</th>
+                        <th scope="col">back-end</th>
+                        <th scope="col">data base</th>
+                        <th scope="col">cross-plataform</th>
+                        <th scope="col">frameworks/bibliotecas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">PHP</th>
+                        <td>sim</td>
+                        <td>sim</td>
+                        <td rowspan="7">sim</td>
+                        <td>pwa</td>
+                        <td>laravel</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Java</th>
+                        <td>não</td>
+                        <td>sim, spring</td>
+                        <td>kotlin(android)</td>
+                        <td>spring, spring boot</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">C#</th>
+                        <td>no</td>
+                        <td>sim</td>
+                        <td>xamarim,unity</td>
+                        <td rowspan="2">???</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">C++</th>
+                        <td>no</td>
+                        <td>sim</td>
+                        <td>unity</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JavaScript</th>
+                        <td>sim</td>
+                        <td>nodeJS</td>
+                        <td>react native, ionic</td>
+                        <td>angular,vue,react, express, nextJS, NuxtJS</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ruby</th>
+                        <td>no</td>
+                        <td>sim</td>
+                        <td>no</td>
+                        <td>ruby on rails</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">python</th>
+                        <td>no</td>
+                        <td>sim</td>
+                        <td>sim</td>
+                        <td>django</td>
+                    </tr>
+                </tbody>
+                    <tr class="destaque">
+                        <th>sua escolha : </th>
+                        <td colspan="5">JavaScript</td>
+                    </tr>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
     </main>
 </body>
 </html>
