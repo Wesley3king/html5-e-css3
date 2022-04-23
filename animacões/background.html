@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background animation</title>
+    <style>
+        body{
+            width: 98vw;
+            height: 96.7vh;
+            text-align: center;
+            
+            background-image: linear-gradient(-45deg, #ee7752, #e73c7e,#23a6d5,#23d5ab);
+            background-repeat: no-repeat;
+            background-position: -50px, 0;
+            background-size: 300% 300%;
+            animation: bc 60s ease infinite;
+        }
+            
+        
+        .anim{
+            width: 50%;
+            height: 40%;
+            margin: auto;
+            font-family: ubuntu,sans-serif;
+        }
+
+        .pt1{
+            width: 100px;
+            height: 6px;
+            background-color: black;
+            transform: rotate(45deg);
+        }
+        .pt2{
+            width: 100px;
+            height: 6px;
+            background-color: black;
+            transform: translate(69px, -3px) rotate(-45deg);
+        }
+        .alin{
+            margin-top: 100px;
+        }
+        .seta{
+            margin-left: 45%;
+            animation: move 1.9s ease-in-out infinite alternate;
+        }
+        @keyframes bc {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+
+        @keyframes move {
+            to{
+                transform: translate(0,50px);
+            }
+        }
+        .ttop{
+            margin-top: 100px;
+        }
+        
+        .alinhar{
+            width: 190px;
+            height: 39px;
+            position: relative;
+            overflow: hidden;
+            animation: fundo 1s linear 1 forwards;
+            background-color: rgb(9, 211, 9);
+            content: '';
+            display: block;
+            z-index: 1;
+        }
+        .letter{
+            height: 39px;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: auto;
+            transform: translate(0 ,-100%);
+            z-index: 0;
+        }
+        .letter::after{
+            content: '';
+            animation: txt 1s linear 1 forwards;
+        }
+        .seg{
+            width: max-content;
+            margin: auto;
+            overflow: hidden;
+        }
+        @keyframes fundo{
+            from {
+                transform: translateX(-101%);
+            }
+            to {
+                transform: translateX(101%);
+                
+            }
+        }
+        @keyframes txt {
+            to{
+                content: 'texto aqui!';
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anim">
+        <h1>animações css</h1>
+    </div>
+    <hr>
+    <section>
+        <div class="alin">
+            <div class="seta"><div class="pt1"></div><div class="pt2"></div></div>
+        </div>
+    </section>
+    <section class="ttop">
+        <hr>
+        <div class="seg">
+            <div class="alinhar"></div>
+            <div class="letter"></div>
+        </div>
+    </section>
+</body>
+</html>
