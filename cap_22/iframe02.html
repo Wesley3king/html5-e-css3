@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula - 04 - navegando em iframes</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: gray;
+        }
+        iframe{
+            width: 100%;
+            background-color: black;
+            height: 20vh;
+        }
+        #frametst::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>aula - 04 - navegando em iframes</h1>
+    </header>
+    <main>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque rem, esse est maiores eos similique culpa, perspiciatis non vitae tempora sint, iure delectus minus incidunt natus. Deserunt, consequuntur facilis?</p>
+        <nav>
+            <a href="./pages/page01.html" target="frame"> pagina 1</a>
+            <a href="./pages/page02.html" target="frame"> pagina 2</a>
+        </nav>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat excepturi eum blanditiis cum reiciendis in. Maxime nihil facilis et expedita voluptate molestiae illum, aut, tempore quis unde sint doloremque.</p>
+        <iframe src="" id="frametst" frameborder="0" name="frame">
+            <p>sem compatibilidade com iframes.</p>
+        </iframe>
+    </main>
+</body>
+</html>
