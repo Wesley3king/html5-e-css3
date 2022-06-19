@@ -8,11 +8,12 @@
     <style>
         body{
             text-align: center;
-            background-color: gray;
+            background-color: rgb(241, 239, 239);
         }
         iframe{
             width: 100%;
             background-color: black;
+            color: white;
             height: 20vh;
         }
         #frametst::-webkit-scrollbar{
@@ -31,9 +32,12 @@
             <a href="./pages/page02.html" target="frame"> pagina 2</a>
         </nav>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat excepturi eum blanditiis cum reiciendis in. Maxime nihil facilis et expedita voluptate molestiae illum, aut, tempore quis unde sint doloremque.</p>
-        <iframe src="" id="frametst" frameborder="0" name="frame">
+        <iframe id="frametst" frameborder="0" name="frame">
             <p>sem compatibilidade com iframes.</p>
         </iframe>
+        <h2>aula 05 - srcdoc, colocando html em nossos iframes</h2>
+
+        <iframe srcdoc="<p style='color:white'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat dolorem explicabo omnis voluptates minima, eos beatae quis animi velit harum vero fugiat distinctio accusamus quidem aperiam earum, maxime tenetur unde.</p>" frameborder="0"></iframe>
     </main>
 </body>
 </html>
