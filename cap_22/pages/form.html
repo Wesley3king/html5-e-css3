@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formulario</title>
+</head>
+<body>
+    <h1>testando a segurança com formularios</h1>
+
+    <form action="go" id="www">
+        <input type="text" id="next">
+        <button type="submit" id="wwqw">enviar</button>
+    </form>
+    <button  onclick="send()">escrever</button>
+    <div id="area"></div>
+
+    <script>
+        const area = document.querySelector("#area");
+
+        function send() {
+            area.innerHTML += `<p>click ok</p>`;
+        }
+    </script>
+</body>
+</html>
