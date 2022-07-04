@@ -8,27 +8,26 @@ img{
 }
 body#main{
     width: 98vw;
-    height: 98vh;
+    height: 100vh;
     background-image: url("../pacote-d013/imagens/fundo-madeira.jpg");
     background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
 }
 
-#iphone_center{
-    position: relative;
-}
+
 #iphone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
     width: 311px;
     height: 627px;
     background-image: url("../pacote-d013/imagens/frame-iphone.png");
     background-repeat: no-repeat;
     background-size: contain;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
 }
 
 iframe{
@@ -59,7 +58,42 @@ img{
 }
 
 #acessar{
+    width: 100%;
+    padding: 20px;
+    font: normal bold 20px helvetica, sans-serif;
     color: white;
     background-color: rgba(230, 18, 18, 0.801);
     border: 0;
+}
+
+/* - links das redes sociais - */
+#redes{
+  
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+li{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+#home{
+    width: 70px;
+    height: 70px;
+    background: url('../pacote-d013/imagens/logo-home.jpg') no-repeat center center scroll;
+    background-size: contain;
+    border-radius: 50%;
+    
+}
+#github{
+    width: 70px;
+    height: 70px;
+    background: url('../pacote-d013/imagens/logo-github.jpg') no-repeat center center scroll;
+    background-size: contain;
+    border-radius: 50%;
 }
