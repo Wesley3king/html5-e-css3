@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 body{
     margin: 0;
@@ -57,19 +58,7 @@ img{
     margin: 0;
 }
 
-#acessar{
-    width: 100%;
-    padding: 20px;
-    font: normal bold 20px helvetica, sans-serif;
-    color: white;
-    background-color: rgba(230, 18, 18, 0.801);
-    border: 0;
-}
-
 /* - links das redes sociais - */
-#redes{
-  
-}
 ul{
     height: 90vh;
     display: flex;
@@ -130,7 +119,16 @@ li{
     background: url('../pacote-d013/imagens/logo-facebook.jpg') no-repeat center center scroll;
     background-size: contain;
     border-radius: 50%;
+}
 
+.anim{
+    box-sizing: border-box;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.658);
+}
+.anim:hover{
+    border: 1px solid white;
+    transform: translate(-2px, -2px);
+    transition: border 1s, transform 0.4s;
 }
 
         /* - media queries */
