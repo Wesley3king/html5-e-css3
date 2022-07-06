@@ -8,7 +8,7 @@ img{
 }
 body#main{
     width: 98vw;
-    height: 100vh;
+    height: 98.1vh;
     background-image: url("../pacote-d013/imagens/fundo-madeira.jpg");
     background-repeat: no-repeat;
     background-position: top center;
@@ -71,6 +71,7 @@ img{
   
 }
 ul{
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -96,4 +97,46 @@ li{
     background: url('../pacote-d013/imagens/logo-github.jpg') no-repeat center center scroll;
     background-size: contain;
     border-radius: 50%;
+}
+
+#youtube{
+    width: 70px;
+    height: 70px;
+    background: url('../pacote-d013/imagens/logo-youtube.jpg') no-repeat center center scroll;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#instagram{
+    width: 70px;
+    height: 70px;
+    background: url('../pacote-d013/imagens/logo-instagram.jpg') no-repeat center center scroll;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#twitter{
+    width: 70px;
+    height: 70px;
+    background: url('../pacote-d013/imagens/logo-twitter.jpg') no-repeat center center scroll;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#facebook{
+    width: 70px;
+    height: 70px;
+    background: url('../pacote-d013/imagens/logo-facebook.jpg') no-repeat center center scroll;
+    background-size: contain;
+    border-radius: 50%;
+
+}
+
+        /* - media queries */
+@media (max-height: 810px) {
+    body#main{
+        width: 98vw;
+        height: 96vh;
+        
+    }
 }
